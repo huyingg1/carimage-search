@@ -1,3 +1,4 @@
+//use them in .env
 const apiKey = "AIzaSyB-BArGjCw9SwaEhbcvIsQzt4VJQTrutjY";
 const searchEngineId = "73c9743b993f04bdb";
 const form = document.getElementById("search-form");
