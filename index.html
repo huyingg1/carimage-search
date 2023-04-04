@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Image Search</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <style>
+      img {
+        max-width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="search-form">
+      <input type="text" id="car-make" placeholder="Car make" />
+      <input type="text" id="car-model" placeholder="Car model" />
+      <button type="submit">Search Images</button>
+    </form>
+    <div id="images-container"></div>
+
+    <script id="image-template" type="text/x-handlebars-template">
+      <h2>Exterior</h2>
+      <img src="{{exteriorImage.link}}" alt="{{exteriorImage.title}}" />
+      <h2>Interior</h2>
+      <img src="{{interiorImage.link}}" alt="{{interiorImage.title}}" />
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
